@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import Landing from './pages/Landing';  
 import Register from './pages/Register'; 
+import Demo from './pages/Demo'; 
 
 const router = createRouter({  
     history: createWebHistory(),  
@@ -15,7 +16,18 @@ const router = createRouter({
             name: 'register',  
             path: '/register',  
             component: Register,  
-        },  
+        },
+        {  
+            name: 'demo',  
+            path: '/demo',  
+            component: Demo,  
+        },
+        {  
+            name: 'dashboard',  
+            path: '/dashboard',  
+            component: Dashboard,  
+        },
+
     ],  
 });  
 export default router;

@@ -9,6 +9,8 @@
     <body class="antialiased">  
         <div id="app">  
         </div>  
+
+        <script src="https://unpkg.com/flowbite@1.4.5/dist/flowbite.js"></script>
     </body>  
     <script src="{{ mix('js/app.js') }}?v={{ mt_rand() }}"></script>  
 </html>

@@ -3,9 +3,15 @@ module.exports = {
         './storage/framework/views/*.php', 
         './resources/views/**/*.blade.php', 
         './resources/js/**/*.vue',
+        './node_modules/flowbite/**/*.js'
     ],
     theme: {
-    extend: {},
+        extend: {},
+        container: {
+            padding: '5rem',
+        },
     },
-    plugins: [],
+    plugins: [
+        require('flowbite/plugin')
+    ],
 }
