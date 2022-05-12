@@ -1,6 +1,6 @@
 <template> 
-    <nav class="w-full bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
-        <div class="container flex flex-wrap justify-between items-center mx-auto shadow-md pt-4 pb-3">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="container flex flex-wrap justify-between items-center mx-auto pt-4 pb-3">
 
             <a href="#" class="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -70,6 +70,9 @@
     </nav> 
 </template> 
 <script> 
+
+    import { mapGetters } from 'vuex';
+
     export default { 
         components: { 
         }, 
@@ -84,6 +87,9 @@
     	methods: { 
         }, 
         computed: { 
+            ...mapGetters('Dashboard', [ 
+                'currentLang', 
+            ]), 
         }, 
         filters: { 
         } 

@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">  
         <title>Laravel Tailwind</title>  
         <link rel="stylesheet" href="{{ mix('css/app.css') }}?v={{ mt_rand() }}">  
+        <link rel="stylesheet" href="{{ mix('css/custom.css') }}?v={{ mt_rand() }}">  
 
     </head>  
     <body class="antialiased">  

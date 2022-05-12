@@ -1,6 +1,6 @@
 <template> 
     <aside class="w-72 transition ease-in-out delay-150" aria-label="Sidebar">
-        <div class="flex flex-col justify-between h-screen bg-white border-r">
+        <div class="bg-sidebar flex flex-col justify-between h-screen bg-white">
             <div class="px-4 py-6">
                 <span class="block w-32 h-10 bg-gray-200 rounded-lg"></span>
 
